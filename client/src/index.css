@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.slick-slide {
+  outline: none;
+}
+
+.logo {
+  display: inline-block;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  transition: all 0.3s ease-in 0s;
+}
+
+a,
+a:focus,
+a:hover {
+  text-decoration: none;
+  outline: 0;
+}
+
+a:focus,
+a:hover {
+  color: #28ABE3;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+/*======================================================================
+ Navbar
+=====================================================================*/
+
+.navigation-menu {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar {
+  font-family: "Lora", serif;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.navbar-light .navbar-brand {
+  color: #fff;
+  text-shadow: 3px 3px 8px #28ABE3;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: #fff;
+}
+
+.navbar-brand {
+  height: auto;
+  padding: 8px 0;
+}
+
+.navbar-brand h1 {
+  margin: 0;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px;
+  padding: 20px 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.2s ease-in-out 0s;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navigation .navbar-light .navbar-nav .nav-item .nav-link:active,
+.navigation .navbar-light .navbar-nav .nav-item .nav-link:focus {
+  background: none;
+  color: #28ABE3;
+}
+
+.navigation .navbar-light .navbar-nav .nav-item.active .nav-link {
+  color: #f0ff24;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    background-color: #f3f3f3e1;
+  }
+
+  .navbar-light .navbar-brand {
+    color: #000;
+  }
+
+  .navbar-light .navbar-nav .nav-item .nav-link {
+    color: #000;
+  }
+}
+
+@media (max-width: 991px) {
+    .navigation-menu {
+       text-shadow: none !important;
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.06);
+        background: #fff;
+    }
+}
+
+.navigation-menu.scrolled {
+  background-color: #fff;
+}
+
+.navigation-menu.scrolled .navbar-light .navbar-brand {
+  color: #000;
+  text-shadow: none !important;
+}
+
+.navigation-menu.scrolled .navbar-light .navbar-nav .nav-item .nav-link {
+  color: #000;
+}
+
+.navigation-menu.scrolled .navbar-light .navbar-nav .nav-item .nav-link:hover {
+  color: #28ABE3;
+}
